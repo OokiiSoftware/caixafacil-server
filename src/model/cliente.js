@@ -34,6 +34,7 @@ const Cliente = function (cliente) {
 };
 
 Cliente.ConsultarLista = async result => {
+
     const res = await conexao.query('Select * from cliente', {
         type: QueryTypes.SELECT
     });
@@ -58,6 +59,10 @@ Cliente.ConsultarObjeto = async(Id, result) => {
 };
 
 Cliente.Inserir = async(cliente, result) => {
+    const res = await conexao.query('INSERT INTO cliente (nome) VALUES ("' + cliente.nome + '");');
+    console.log('Objeto inserido', {id: res.insertId, ...cliente });
+    result(null, {id: res.insertId, ...cliente });
+/*
     conexao.query('INSERT INTO cliente SET ?', cliente, (erro, res) => {
         if (erro) {
             console.log('erro:', erro);
@@ -65,9 +70,8 @@ Cliente.Inserir = async(cliente, result) => {
             return;
         }
 
-        console.log('Objeto inserido', {id: res.insertId, ...cliente });
         result(null, {id: res.insertId, ...cliente });
-    });
+    });*/
 };
 
 Cliente.Alterar = async(Id, cliente, result) => {
