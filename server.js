@@ -4,10 +4,10 @@ const bodyParser = require('body-parser');
 const app = express();
 
 // faz o parse do content-type do request - tipo: application/json
-app.use(bodyParser.json());
+app.use(bodyParser.json({limit: '50mb'}));
 
 // faz o parse do content-type do request - tipo: application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: true })) //extended: true - pode enviar objetos aninhados
+app.use(bodyParser.urlencoded({limit: '50mb',  extended: true })) //extended: true - pode enviar objetos aninhados
 
 // adicionar uma rota simples padrão
 app.get('/', (req, res) => {
