@@ -1,3 +1,4 @@
+
 --
 -- Table structure for table `cardapio_pergunta_padrao`
 --
@@ -18,6 +19,7 @@ LOCK TABLES `cardapio_pergunta_padrao` WRITE;
 /*!40000 ALTER TABLE `cardapio_pergunta_padrao` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:01
+
 --
 -- Table structure for table `cardapio_resposta_padrao`
 --
@@ -38,6 +40,7 @@ LOCK TABLES `cardapio_resposta_padrao` WRITE;
 /*!40000 ALTER TABLE `cardapio_resposta_padrao` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:55
+
 --
 -- Table structure for table `cardapio`
 --
@@ -60,6 +63,7 @@ LOCK TABLES `cardapio` WRITE;
 /*!40000 ALTER TABLE `cardapio` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:08
+
 --
 -- Table structure for table `cfop`
 --
@@ -81,6 +85,7 @@ LOCK TABLES `cfop` WRITE;
 /*!40000 ALTER TABLE `cfop` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:00
+
 --
 -- Table structure for table `cliente_fiado`
 --
@@ -104,6 +109,7 @@ LOCK TABLES `cliente_fiado` WRITE;
 /*!40000 ALTER TABLE `cliente_fiado` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:05
+
 --
 -- Table structure for table `cliente`
 --
@@ -152,29 +158,7 @@ INSERT INTO `cliente` VALUES ('1','CLIENTE PF PADRAO',NULL,NULL,NULL,NULL,NULL,N
 /*!40000 ALTER TABLE `cliente` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:53
---
--- Table structure for table `clientes`
---
 
-DROP TABLE IF EXISTS `clientes`;
-CREATE TABLE `clientes` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `nome` varchar(255) DEFAULT NULL,
-  `email` varchar(255) DEFAULT NULL,
-  `createdAt` datetime NOT NULL,
-  `updatedAt` datetime NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
---
--- Dumping data for table `clientes`
---
-
-LOCK TABLES `clientes` WRITE;
-/*!40000 ALTER TABLE `clientes` DISABLE KEYS */;
-/*!40000 ALTER TABLE `clientes` ENABLE KEYS */;
-UNLOCK TABLES;
--- Dump completed on 2024-01-15 10:10:09
 --
 -- Table structure for table `colaborador`
 --
@@ -203,6 +187,7 @@ INSERT INTO `colaborador` VALUES ('1','ADMINISTRADOR',NULL,NULL,NULL,NULL,NULL,N
 /*!40000 ALTER TABLE `colaborador` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:09
+
 --
 -- Table structure for table `comanda_detalhe_complemento`
 --
@@ -227,6 +212,7 @@ LOCK TABLES `comanda_detalhe_complemento` WRITE;
 /*!40000 ALTER TABLE `comanda_detalhe_complemento` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:11
+
 --
 -- Table structure for table `comanda_detalhe`
 --
@@ -253,6 +239,7 @@ LOCK TABLES `comanda_detalhe` WRITE;
 /*!40000 ALTER TABLE `comanda_detalhe` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:10
+
 --
 -- Table structure for table `comanda_observacao_padrao`
 --
@@ -274,6 +261,7 @@ INSERT INTO `comanda_observacao_padrao` VALUES ('1','1','Sem Cebola'),('2','2','
 /*!40000 ALTER TABLE `comanda_observacao_padrao` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:03
+
 --
 -- Table structure for table `comanda_pedido`
 --
@@ -301,6 +289,7 @@ LOCK TABLES `comanda_pedido` WRITE;
 /*!40000 ALTER TABLE `comanda_pedido` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:08
+
 --
 -- Table structure for table `comanda`
 --
@@ -336,6 +325,7 @@ LOCK TABLES `comanda` WRITE;
 /*!40000 ALTER TABLE `comanda` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:02
+
 --
 -- Table structure for table `compra_pedido_cabecalho`
 --
@@ -376,6 +366,7 @@ LOCK TABLES `compra_pedido_cabecalho` WRITE;
 /*!40000 ALTER TABLE `compra_pedido_cabecalho` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:02
+
 --
 -- Table structure for table `compra_pedido_detalhe`
 --
@@ -405,6 +396,7 @@ LOCK TABLES `compra_pedido_detalhe` WRITE;
 /*!40000 ALTER TABLE `compra_pedido_detalhe` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:56
+
 --
 -- Table structure for table `contador`
 --
@@ -439,6 +431,7 @@ LOCK TABLES `contador` WRITE;
 /*!40000 ALTER TABLE `contador` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:02
+
 --
 -- Table structure for table `contas_pagar`
 --
@@ -473,6 +466,7 @@ LOCK TABLES `contas_pagar` WRITE;
 /*!40000 ALTER TABLE `contas_pagar` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:55
+
 --
 -- Table structure for table `contas_receber`
 --
@@ -507,6 +501,7 @@ LOCK TABLES `contas_receber` WRITE;
 /*!40000 ALTER TABLE `contas_receber` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:54
+
 --
 -- Table structure for table `cozinha`
 --
@@ -528,6 +523,7 @@ LOCK TABLES `cozinha` WRITE;
 /*!40000 ALTER TABLE `cozinha` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:03
+
 --
 -- Table structure for table `delivery_acerto_comanda`
 --
@@ -548,6 +544,7 @@ LOCK TABLES `delivery_acerto_comanda` WRITE;
 /*!40000 ALTER TABLE `delivery_acerto_comanda` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:57
+
 --
 -- Table structure for table `delivery_acerto`
 --
@@ -571,6 +568,7 @@ LOCK TABLES `delivery_acerto` WRITE;
 /*!40000 ALTER TABLE `delivery_acerto` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:50
+
 --
 -- Table structure for table `delivery`
 --
@@ -615,6 +613,7 @@ LOCK TABLES `delivery` WRITE;
 /*!40000 ALTER TABLE `delivery` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:58
+
 --
 -- Table structure for table `ecf_aliquotas`
 --
@@ -636,6 +635,7 @@ LOCK TABLES `ecf_aliquotas` WRITE;
 /*!40000 ALTER TABLE `ecf_aliquotas` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:07
+
 --
 -- Table structure for table `ecf_documentos_emitidos`
 --
@@ -659,6 +659,7 @@ LOCK TABLES `ecf_documentos_emitidos` WRITE;
 /*!40000 ALTER TABLE `ecf_documentos_emitidos` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:07
+
 --
 -- Table structure for table `ecf_e3`
 --
@@ -685,6 +686,7 @@ LOCK TABLES `ecf_e3` WRITE;
 /*!40000 ALTER TABLE `ecf_e3` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:08
+
 --
 -- Table structure for table `ecf_impressora`
 --
@@ -723,6 +725,7 @@ LOCK TABLES `ecf_impressora` WRITE;
 /*!40000 ALTER TABLE `ecf_impressora` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:52
+
 --
 -- Table structure for table `ecf_log_totais`
 --
@@ -750,6 +753,7 @@ LOCK TABLES `ecf_log_totais` WRITE;
 /*!40000 ALTER TABLE `ecf_log_totais` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:52
+
 --
 -- Table structure for table `ecf_r01`
 --
@@ -793,6 +797,7 @@ LOCK TABLES `ecf_r01` WRITE;
 /*!40000 ALTER TABLE `ecf_r01` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:59
+
 --
 -- Table structure for table `ecf_r02`
 --
@@ -824,6 +829,7 @@ LOCK TABLES `ecf_r02` WRITE;
 /*!40000 ALTER TABLE `ecf_r02` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:54
+
 --
 -- Table structure for table `ecf_r03`
 --
@@ -848,6 +854,7 @@ LOCK TABLES `ecf_r03` WRITE;
 /*!40000 ALTER TABLE `ecf_r03` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:50
+
 --
 -- Table structure for table `ecf_r06`
 --
@@ -878,6 +885,7 @@ LOCK TABLES `ecf_r06` WRITE;
 /*!40000 ALTER TABLE `ecf_r06` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:10
+
 --
 -- Table structure for table `ecf_r07`
 --
@@ -903,6 +911,7 @@ LOCK TABLES `ecf_r07` WRITE;
 /*!40000 ALTER TABLE `ecf_r07` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:06
+
 --
 -- Table structure for table `ecf_recebimento_nao_fiscal`
 --
@@ -925,6 +934,7 @@ LOCK TABLES `ecf_recebimento_nao_fiscal` WRITE;
 /*!40000 ALTER TABLE `ecf_recebimento_nao_fiscal` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:01
+
 --
 -- Table structure for table `ecf_relatorio_gerencial`
 --
@@ -950,6 +960,7 @@ LOCK TABLES `ecf_relatorio_gerencial` WRITE;
 /*!40000 ALTER TABLE `ecf_relatorio_gerencial` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:05
+
 --
 -- Table structure for table `ecf_sintegra_60a`
 --
@@ -971,6 +982,7 @@ LOCK TABLES `ecf_sintegra_60a` WRITE;
 /*!40000 ALTER TABLE `ecf_sintegra_60a` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:51
+
 --
 -- Table structure for table `ecf_sintegra_60m`
 --
@@ -999,6 +1011,7 @@ LOCK TABLES `ecf_sintegra_60m` WRITE;
 /*!40000 ALTER TABLE `ecf_sintegra_60m` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:03
+
 --
 -- Table structure for table `empresa_cnae`
 --
@@ -1021,6 +1034,7 @@ INSERT INTO `empresa_cnae` VALUES (NULL,'4751201','S','Comércio varejista espec
 /*!40000 ALTER TABLE `empresa_cnae` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:10
+
 --
 -- Table structure for table `empresa_delivery_pedido`
 --
@@ -1044,6 +1058,7 @@ LOCK TABLES `empresa_delivery_pedido` WRITE;
 /*!40000 ALTER TABLE `empresa_delivery_pedido` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:04
+
 --
 -- Table structure for table `empresa_segmento`
 --
@@ -1066,6 +1081,7 @@ INSERT INTO `empresa_segmento` VALUES ('1','A','01..03','AGRICULTURA, PECUÁRIA,
 /*!40000 ALTER TABLE `empresa_segmento` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:03
+
 --
 -- Table structure for table `empresa`
 --
@@ -1115,6 +1131,7 @@ INSERT INTO `empresa` VALUES ('1','JONAS SANTOS FERREIRA 02773133331','OKISOFT S
 /*!40000 ALTER TABLE `empresa` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:56
+
 --
 -- Table structure for table `entregador_rota_detalhe`
 --
@@ -1138,6 +1155,7 @@ LOCK TABLES `entregador_rota_detalhe` WRITE;
 /*!40000 ALTER TABLE `entregador_rota_detalhe` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:57
+
 --
 -- Table structure for table `entregador_rota`
 --
@@ -1161,6 +1179,7 @@ LOCK TABLES `entregador_rota` WRITE;
 /*!40000 ALTER TABLE `entregador_rota` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:57
+
 --
 -- Table structure for table `fidelidade_historico`
 --
@@ -1184,6 +1203,7 @@ LOCK TABLES `fidelidade_historico` WRITE;
 /*!40000 ALTER TABLE `fidelidade_historico` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:02
+
 --
 -- Table structure for table `fidelidade_utilizado`
 --
@@ -1205,6 +1225,7 @@ LOCK TABLES `fidelidade_utilizado` WRITE;
 /*!40000 ALTER TABLE `fidelidade_utilizado` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:10
+
 --
 -- Table structure for table `fornecedor`
 --
@@ -1248,6 +1269,7 @@ LOCK TABLES `fornecedor` WRITE;
 /*!40000 ALTER TABLE `fornecedor` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:55
+
 --
 -- Table structure for table `ibpt`
 --
@@ -1279,6 +1301,7 @@ LOCK TABLES `ibpt` WRITE;
 /*!40000 ALTER TABLE `ibpt` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:51
+
 --
 -- Table structure for table `log_importacao`
 --
@@ -1301,6 +1324,7 @@ LOCK TABLES `log_importacao` WRITE;
 /*!40000 ALTER TABLE `log_importacao` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:56
+
 --
 -- Table structure for table `mesa`
 --
@@ -1324,6 +1348,7 @@ LOCK TABLES `mesa` WRITE;
 /*!40000 ALTER TABLE `mesa` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:56
+
 --
 -- Table structure for table `nfce_plano_pagamento`
 --
@@ -1352,6 +1377,7 @@ LOCK TABLES `nfce_plano_pagamento` WRITE;
 /*!40000 ALTER TABLE `nfce_plano_pagamento` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:54
+
 --
 -- Table structure for table `nfe_acesso_xml`
 --
@@ -1373,6 +1399,7 @@ LOCK TABLES `nfe_acesso_xml` WRITE;
 /*!40000 ALTER TABLE `nfe_acesso_xml` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:58
+
 --
 -- Table structure for table `nfe_cana_deducoes_safra`
 --
@@ -1397,6 +1424,7 @@ LOCK TABLES `nfe_cana_deducoes_safra` WRITE;
 /*!40000 ALTER TABLE `nfe_cana_deducoes_safra` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:00
+
 --
 -- Table structure for table `nfe_cana_fornecimento_diario`
 --
@@ -1421,6 +1449,7 @@ LOCK TABLES `nfe_cana_fornecimento_diario` WRITE;
 /*!40000 ALTER TABLE `nfe_cana_fornecimento_diario` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:59
+
 --
 -- Table structure for table `nfe_cana`
 --
@@ -1442,6 +1471,7 @@ LOCK TABLES `nfe_cana` WRITE;
 /*!40000 ALTER TABLE `nfe_cana` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:58
+
 --
 -- Table structure for table `nfe_configuracao`
 --
@@ -1509,6 +1539,7 @@ INSERT INTO `nfe_configuracao` VALUES ('1',NULL,NULL,NULL,NULL,'4',NULL,NULL,NUL
 /*!40000 ALTER TABLE `nfe_configuracao` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:11
+
 --
 -- Table structure for table `nfe_cte_referenciado`
 --
@@ -1529,6 +1560,7 @@ LOCK TABLES `nfe_cte_referenciado` WRITE;
 /*!40000 ALTER TABLE `nfe_cte_referenciado` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:55
+
 --
 -- Table structure for table `nfe_cupom_fiscal_referenciado`
 --
@@ -1554,6 +1586,7 @@ LOCK TABLES `nfe_cupom_fiscal_referenciado` WRITE;
 /*!40000 ALTER TABLE `nfe_cupom_fiscal_referenciado` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:52
+
 --
 -- Table structure for table `nfe_declaracao_importacao`
 --
@@ -1584,6 +1617,7 @@ LOCK TABLES `nfe_declaracao_importacao` WRITE;
 /*!40000 ALTER TABLE `nfe_declaracao_importacao` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:09
+
 --
 -- Table structure for table `nfe_destinatario`
 --
@@ -1623,6 +1657,7 @@ LOCK TABLES `nfe_destinatario` WRITE;
 /*!40000 ALTER TABLE `nfe_destinatario` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:52
+
 --
 -- Table structure for table `nfe_det_especifico_armamento`
 --
@@ -1646,6 +1681,7 @@ LOCK TABLES `nfe_det_especifico_armamento` WRITE;
 /*!40000 ALTER TABLE `nfe_det_especifico_armamento` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:57
+
 --
 -- Table structure for table `nfe_det_especifico_combustivel`
 --
@@ -1682,6 +1718,7 @@ LOCK TABLES `nfe_det_especifico_combustivel` WRITE;
 /*!40000 ALTER TABLE `nfe_det_especifico_combustivel` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:05
+
 --
 -- Table structure for table `nfe_det_especifico_medicamento`
 --
@@ -1704,6 +1741,7 @@ LOCK TABLES `nfe_det_especifico_medicamento` WRITE;
 /*!40000 ALTER TABLE `nfe_det_especifico_medicamento` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:02
+
 --
 -- Table structure for table `nfe_det_especifico_veiculo`
 --
@@ -1747,6 +1785,7 @@ LOCK TABLES `nfe_det_especifico_veiculo` WRITE;
 /*!40000 ALTER TABLE `nfe_det_especifico_veiculo` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:06
+
 --
 -- Table structure for table `nfe_detalhe_imposto_cofins_st`
 --
@@ -1771,6 +1810,7 @@ LOCK TABLES `nfe_detalhe_imposto_cofins_st` WRITE;
 /*!40000 ALTER TABLE `nfe_detalhe_imposto_cofins_st` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:50
+
 --
 -- Table structure for table `nfe_detalhe_imposto_cofins`
 --
@@ -1796,6 +1836,7 @@ LOCK TABLES `nfe_detalhe_imposto_cofins` WRITE;
 /*!40000 ALTER TABLE `nfe_detalhe_imposto_cofins` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:09
+
 --
 -- Table structure for table `nfe_detalhe_imposto_icms_ufdest`
 --
@@ -1824,6 +1865,7 @@ LOCK TABLES `nfe_detalhe_imposto_icms_ufdest` WRITE;
 /*!40000 ALTER TABLE `nfe_detalhe_imposto_icms_ufdest` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:55
+
 --
 -- Table structure for table `nfe_detalhe_imposto_icms`
 --
@@ -1885,6 +1927,7 @@ LOCK TABLES `nfe_detalhe_imposto_icms` WRITE;
 /*!40000 ALTER TABLE `nfe_detalhe_imposto_icms` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:00
+
 --
 -- Table structure for table `nfe_detalhe_imposto_ii`
 --
@@ -1908,6 +1951,7 @@ LOCK TABLES `nfe_detalhe_imposto_ii` WRITE;
 /*!40000 ALTER TABLE `nfe_detalhe_imposto_ii` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:07
+
 --
 -- Table structure for table `nfe_detalhe_imposto_ipi`
 --
@@ -1937,6 +1981,7 @@ LOCK TABLES `nfe_detalhe_imposto_ipi` WRITE;
 /*!40000 ALTER TABLE `nfe_detalhe_imposto_ipi` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:58
+
 --
 -- Table structure for table `nfe_detalhe_imposto_issqn`
 --
@@ -1972,6 +2017,7 @@ LOCK TABLES `nfe_detalhe_imposto_issqn` WRITE;
 /*!40000 ALTER TABLE `nfe_detalhe_imposto_issqn` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:07
+
 --
 -- Table structure for table `nfe_detalhe_imposto_pis_st`
 --
@@ -1996,6 +2042,7 @@ LOCK TABLES `nfe_detalhe_imposto_pis_st` WRITE;
 /*!40000 ALTER TABLE `nfe_detalhe_imposto_pis_st` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:04
+
 --
 -- Table structure for table `nfe_detalhe_imposto_pis`
 --
@@ -2021,6 +2068,7 @@ LOCK TABLES `nfe_detalhe_imposto_pis` WRITE;
 /*!40000 ALTER TABLE `nfe_detalhe_imposto_pis` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:51
+
 --
 -- Table structure for table `nfe_detalhe`
 --
@@ -2075,6 +2123,7 @@ LOCK TABLES `nfe_detalhe` WRITE;
 /*!40000 ALTER TABLE `nfe_detalhe` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:00
+
 --
 -- Table structure for table `nfe_duplicata`
 --
@@ -2097,6 +2146,7 @@ LOCK TABLES `nfe_duplicata` WRITE;
 /*!40000 ALTER TABLE `nfe_duplicata` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:01
+
 --
 -- Table structure for table `nfe_emitente`
 --
@@ -2136,6 +2186,7 @@ LOCK TABLES `nfe_emitente` WRITE;
 /*!40000 ALTER TABLE `nfe_emitente` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:03
+
 --
 -- Table structure for table `nfe_exportacao`
 --
@@ -2159,6 +2210,7 @@ LOCK TABLES `nfe_exportacao` WRITE;
 /*!40000 ALTER TABLE `nfe_exportacao` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:52
+
 --
 -- Table structure for table `nfe_fatura`
 --
@@ -2182,6 +2234,7 @@ LOCK TABLES `nfe_fatura` WRITE;
 /*!40000 ALTER TABLE `nfe_fatura` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:59
+
 --
 -- Table structure for table `nfe_importacao_detalhe`
 --
@@ -2206,6 +2259,7 @@ LOCK TABLES `nfe_importacao_detalhe` WRITE;
 /*!40000 ALTER TABLE `nfe_importacao_detalhe` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:04
+
 --
 -- Table structure for table `nfe_informacao_pagamento`
 --
@@ -2233,6 +2287,7 @@ LOCK TABLES `nfe_informacao_pagamento` WRITE;
 /*!40000 ALTER TABLE `nfe_informacao_pagamento` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:05
+
 --
 -- Table structure for table `nfe_item_rastreado`
 --
@@ -2257,6 +2312,7 @@ LOCK TABLES `nfe_item_rastreado` WRITE;
 /*!40000 ALTER TABLE `nfe_item_rastreado` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:53
+
 --
 -- Table structure for table `nfe_local_entrega`
 --
@@ -2292,6 +2348,7 @@ LOCK TABLES `nfe_local_entrega` WRITE;
 /*!40000 ALTER TABLE `nfe_local_entrega` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:01
+
 --
 -- Table structure for table `nfe_local_retirada`
 --
@@ -2327,6 +2384,7 @@ LOCK TABLES `nfe_local_retirada` WRITE;
 /*!40000 ALTER TABLE `nfe_local_retirada` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:01
+
 --
 -- Table structure for table `nfe_nf_referenciada`
 --
@@ -2352,6 +2410,7 @@ LOCK TABLES `nfe_nf_referenciada` WRITE;
 /*!40000 ALTER TABLE `nfe_nf_referenciada` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:10
+
 --
 -- Table structure for table `nfe_numero_inutilizado`
 --
@@ -2374,6 +2433,7 @@ LOCK TABLES `nfe_numero_inutilizado` WRITE;
 /*!40000 ALTER TABLE `nfe_numero_inutilizado` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:56
+
 --
 -- Table structure for table `nfe_numero`
 --
@@ -2396,6 +2456,7 @@ INSERT INTO `nfe_numero` VALUES ('1','65','1','1');
 /*!40000 ALTER TABLE `nfe_numero` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:05
+
 --
 -- Table structure for table `nfe_processo_referenciado`
 --
@@ -2417,6 +2478,7 @@ LOCK TABLES `nfe_processo_referenciado` WRITE;
 /*!40000 ALTER TABLE `nfe_processo_referenciado` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:09
+
 --
 -- Table structure for table `nfe_prod_rural_referenciada`
 --
@@ -2444,6 +2506,7 @@ LOCK TABLES `nfe_prod_rural_referenciada` WRITE;
 /*!40000 ALTER TABLE `nfe_prod_rural_referenciada` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:03
+
 --
 -- Table structure for table `nfe_referenciada`
 --
@@ -2464,6 +2527,7 @@ LOCK TABLES `nfe_referenciada` WRITE;
 /*!40000 ALTER TABLE `nfe_referenciada` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:04
+
 --
 -- Table structure for table `nfe_responsavel_tecnico`
 --
@@ -2489,6 +2553,7 @@ LOCK TABLES `nfe_responsavel_tecnico` WRITE;
 /*!40000 ALTER TABLE `nfe_responsavel_tecnico` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:59
+
 --
 -- Table structure for table `nfe_transporte_reboque`
 --
@@ -2513,6 +2578,7 @@ LOCK TABLES `nfe_transporte_reboque` WRITE;
 /*!40000 ALTER TABLE `nfe_transporte_reboque` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:04
+
 --
 -- Table structure for table `nfe_transporte_volume_lacre`
 --
@@ -2533,6 +2599,7 @@ LOCK TABLES `nfe_transporte_volume_lacre` WRITE;
 /*!40000 ALTER TABLE `nfe_transporte_volume_lacre` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:52
+
 --
 -- Table structure for table `nfe_transporte_volume`
 --
@@ -2558,6 +2625,7 @@ LOCK TABLES `nfe_transporte_volume` WRITE;
 /*!40000 ALTER TABLE `nfe_transporte_volume` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:50
+
 --
 -- Table structure for table `nfe_transporte`
 --
@@ -2594,6 +2662,7 @@ LOCK TABLES `nfe_transporte` WRITE;
 /*!40000 ALTER TABLE `nfe_transporte` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:55
+
 --
 -- Table structure for table `pdv_caixa`
 --
@@ -2615,6 +2684,7 @@ INSERT INTO `pdv_caixa` VALUES ('1','1EE58323-3840-46E9-82B4-16730E','1704993520
 /*!40000 ALTER TABLE `pdv_caixa` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:56
+
 --
 -- Table structure for table `pdv_configuracao_balanca`
 --
@@ -2644,6 +2714,7 @@ LOCK TABLES `pdv_configuracao_balanca` WRITE;
 /*!40000 ALTER TABLE `pdv_configuracao_balanca` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:00
+
 --
 -- Table structure for table `pdv_configuracao_leitor_serial`
 --
@@ -2676,6 +2747,7 @@ LOCK TABLES `pdv_configuracao_leitor_serial` WRITE;
 /*!40000 ALTER TABLE `pdv_configuracao_leitor_serial` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:51
+
 --
 -- Table structure for table `pdv_configuracao`
 --
@@ -2743,6 +2815,7 @@ INSERT INTO `pdv_configuracao` VALUES ('1',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NU
 /*!40000 ALTER TABLE `pdv_configuracao` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:07
+
 --
 -- Table structure for table `pdv_fechamento`
 --
@@ -2764,6 +2837,7 @@ LOCK TABLES `pdv_fechamento` WRITE;
 /*!40000 ALTER TABLE `pdv_fechamento` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:50
+
 --
 -- Table structure for table `pdv_movimento`
 --
@@ -2802,6 +2876,7 @@ INSERT INTO `pdv_movimento` VALUES (NULL,NULL,NULL,NULL,NULL,'1704993380','14:16
 /*!40000 ALTER TABLE `pdv_movimento` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:09
+
 --
 -- Table structure for table `pdv_operador`
 --
@@ -2823,6 +2898,7 @@ LOCK TABLES `pdv_operador` WRITE;
 /*!40000 ALTER TABLE `pdv_operador` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:59
+
 --
 -- Table structure for table `pdv_sangria`
 --
@@ -2846,6 +2922,7 @@ LOCK TABLES `pdv_sangria` WRITE;
 /*!40000 ALTER TABLE `pdv_sangria` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:08
+
 --
 -- Table structure for table `pdv_suprimento`
 --
@@ -2869,6 +2946,7 @@ LOCK TABLES `pdv_suprimento` WRITE;
 /*!40000 ALTER TABLE `pdv_suprimento` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:54
+
 --
 -- Table structure for table `pdv_tipo_pagamento`
 --
@@ -2896,6 +2974,7 @@ INSERT INTO `pdv_tipo_pagamento` VALUES ('1','1','DINHEIRO','N','N','S','N','N',
 /*!40000 ALTER TABLE `pdv_tipo_pagamento` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:06
+
 --
 -- Table structure for table `pdv_total_tipo_pagamento`
 --
@@ -2928,6 +3007,7 @@ LOCK TABLES `pdv_total_tipo_pagamento` WRITE;
 /*!40000 ALTER TABLE `pdv_total_tipo_pagamento` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:04
+
 --
 -- Table structure for table `pdv_venda_cabecalho`
 --
@@ -2982,6 +3062,7 @@ LOCK TABLES `pdv_venda_cabecalho` WRITE;
 /*!40000 ALTER TABLE `pdv_venda_cabecalho` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:06
+
 --
 -- Table structure for table `pdv_venda_detalhe`
 --
@@ -3034,6 +3115,7 @@ LOCK TABLES `pdv_venda_detalhe` WRITE;
 /*!40000 ALTER TABLE `pdv_venda_detalhe` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:58
+
 --
 -- Table structure for table `produto_ficha_tecnica`
 --
@@ -3058,6 +3140,7 @@ LOCK TABLES `produto_ficha_tecnica` WRITE;
 /*!40000 ALTER TABLE `produto_ficha_tecnica` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:51
+
 --
 -- Table structure for table `produto_grupo`
 --
@@ -3079,6 +3162,7 @@ INSERT INTO `produto_grupo` VALUES ('1','GRUPO GERAL','GRUPO GERAL DE PRODUTOS')
 /*!40000 ALTER TABLE `produto_grupo` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:01
+
 --
 -- Table structure for table `produto_imagem`
 --
@@ -3099,6 +3183,7 @@ LOCK TABLES `produto_imagem` WRITE;
 /*!40000 ALTER TABLE `produto_imagem` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:00
+
 --
 -- Table structure for table `produto_promocao`
 --
@@ -3123,6 +3208,7 @@ LOCK TABLES `produto_promocao` WRITE;
 /*!40000 ALTER TABLE `produto_promocao` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:06
+
 --
 -- Table structure for table `produto_subgrupo`
 --
@@ -3145,6 +3231,7 @@ INSERT INTO `produto_subgrupo` VALUES ('1','1','SUBGRUPO GERAL','SUBGRUPO GERAL 
 /*!40000 ALTER TABLE `produto_subgrupo` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:08
+
 --
 -- Table structure for table `produto_tipo`
 --
@@ -3166,6 +3253,7 @@ INSERT INTO `produto_tipo` VALUES ('1','1','PRODUTO'),('2','2','SERVIÇO'),('3',
 /*!40000 ALTER TABLE `produto_tipo` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:08
+
 --
 -- Table structure for table `produto_unidade`
 --
@@ -3188,6 +3276,7 @@ INSERT INTO `produto_unidade` VALUES ('1','KG',NULL,'S'),('2','UND',NULL,'N'),('
 /*!40000 ALTER TABLE `produto_unidade` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:06
+
 --
 -- Table structure for table `produto`
 --
@@ -3240,6 +3329,7 @@ INSERT INTO `produto` VALUES ('1','1',NULL,'1','1','3011010827133','30113','01 P
 /*!40000 ALTER TABLE `produto` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:54
+
 --
 -- Table structure for table `reserva_mesa`
 --
@@ -3260,6 +3350,7 @@ LOCK TABLES `reserva_mesa` WRITE;
 /*!40000 ALTER TABLE `reserva_mesa` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:57
+
 --
 -- Table structure for table `reserva`
 --
@@ -3285,6 +3376,7 @@ LOCK TABLES `reserva` WRITE;
 /*!40000 ALTER TABLE `reserva` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:53
+
 --
 -- Table structure for table `taxa_entrega`
 --
@@ -3307,6 +3399,7 @@ INSERT INTO `taxa_entrega` VALUES ('1','Perto - até 05 Km','5','15'),('2','Inte
 /*!40000 ALTER TABLE `taxa_entrega` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:58
+
 --
 -- Table structure for table `tribut_cofins`
 --
@@ -3335,6 +3428,7 @@ INSERT INTO `tribut_cofins` VALUES ('1','1','99',NULL,'0',NULL,'0',NULL,NULL,NUL
 /*!40000 ALTER TABLE `tribut_cofins` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:10
+
 --
 -- Table structure for table `tribut_configura_of_gt`
 --
@@ -3356,6 +3450,7 @@ INSERT INTO `tribut_configura_of_gt` VALUES ('1','1','1'),('2','2','2');
 /*!40000 ALTER TABLE `tribut_configura_of_gt` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:11
+
 --
 -- Table structure for table `tribut_grupo_tributario`
 --
@@ -3378,6 +3473,7 @@ INSERT INTO `tribut_grupo_tributario` VALUES ('1','PRODUTO DE FABRICACAO PROPRIA
 /*!40000 ALTER TABLE `tribut_grupo_tributario` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:53
+
 --
 -- Table structure for table `tribut_icms_custom_cab`
 --
@@ -3398,6 +3494,7 @@ LOCK TABLES `tribut_icms_custom_cab` WRITE;
 /*!40000 ALTER TABLE `tribut_icms_custom_cab` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:54
+
 --
 -- Table structure for table `tribut_icms_custom_det`
 --
@@ -3434,6 +3531,7 @@ LOCK TABLES `tribut_icms_custom_det` WRITE;
 /*!40000 ALTER TABLE `tribut_icms_custom_det` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:05
+
 --
 -- Table structure for table `tribut_icms_uf`
 --
@@ -3471,6 +3569,7 @@ INSERT INTO `tribut_icms_uf` VALUES ('1','1','MA','5101','102','0',NULL,NULL,NUL
 /*!40000 ALTER TABLE `tribut_icms_uf` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:50
+
 --
 -- Table structure for table `tribut_ipi`
 --
@@ -3497,6 +3596,7 @@ LOCK TABLES `tribut_ipi` WRITE;
 /*!40000 ALTER TABLE `tribut_ipi` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:10:02
+
 --
 -- Table structure for table `tribut_iss`
 --
@@ -3524,6 +3624,7 @@ LOCK TABLES `tribut_iss` WRITE;
 /*!40000 ALTER TABLE `tribut_iss` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:51
+
 --
 -- Table structure for table `tribut_operacao_fiscal`
 --
@@ -3547,6 +3648,7 @@ INSERT INTO `tribut_operacao_fiscal` VALUES ('1','VENDA DE PRODUCAO DO ESTABELEC
 /*!40000 ALTER TABLE `tribut_operacao_fiscal` ENABLE KEYS */;
 UNLOCK TABLES;
 -- Dump completed on 2024-01-15 10:09:59
+
 --
 -- Table structure for table `tribut_pis`
 --
