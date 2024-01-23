@@ -6,39 +6,28 @@ class ClienteRoute {
       Routes.get(
         "/cliente",
         // verifyJWT,
-        Controller.getAll
+        Controller.getListCliente
       );
 
       Routes.get(
         '/cliente/:Id',
-        Controller.getById
+        Controller.getClienteById
       );
   
       Routes.post(
         '/cliente',
-        Controller.insert
+        Controller.insertCliente
       );
 
       Routes.put(
         '/cliente/:Id',
-        Controller.update
+        Controller.updateCliente
       );
   
       Routes.delete(
         '/cliente/:Id',
-        Controller.delete
+        Controller.deleteCliente
       );
-  
-    //   Routes.put(
-    //     "/api/update-companion",
-    //     verifyJWT,
-    //     Controller.updateCompanion
-    //   );
-    //   Routes.post(
-    //     "/api/remove-companion-associted-patient",
-    //     verifyJWT,
-    //     Controller.removeCompanionAssocitedPatient
-    //   );
     }
   }
   

@@ -3,9 +3,9 @@ import Cliente from "../services/cliente_service";
 
 class ClienteController {
     
-    async getAll(req: Request, res: Response) {
+    async getListCliente(req: Request, res: Response) {
         try {
-            const response = await Cliente.getAll();
+            const response = await Cliente.getListCliente();
 
             res.status(response ? 200 : 500).json(response);
         } catch(e) {
@@ -13,9 +13,9 @@ class ClienteController {
         }
     }
 
-    async getById(req: Request, res: Response) {
+    async getClienteById(req: Request, res: Response) {
         try {
-            const response = await Cliente.getById(Number(req.params.Id));
+            const response = await Cliente.getClienteById(Number(req.params.Id));
 
             res.status(response ? 200 : 500).json(response);
         } catch(e) {
@@ -23,19 +23,9 @@ class ClienteController {
         }
     }
 
-    async insert(req: Request, res: Response) {
+    async insertCliente(req: Request, res: Response) {
         try {
-            const response = await Cliente.insert(req.body);
-
-            res.status(response ? 200 : 500).json(response);
-        } catch(e) {
-            res.status(500).json(e);
-        }
-    }
-    
-    async update(req: Request, res: Response) {
-        try {
-            const response = await Cliente.update(Number(req.params.Id), req.body);
+            const response = await Cliente.insertCliente(req.body);
 
             res.status(response ? 200 : 500).json(response);
         } catch(e) {
@@ -43,9 +33,19 @@ class ClienteController {
         }
     }
 
-    async delete(req: Request, res: Response) {
+    async updateCliente(req: Request, res: Response) {
         try {
-            const response = await Cliente.delete(Number(req.params.Id));
+            const response = await Cliente.updateCliente(Number(req.params.Id), req.body);
+
+            res.status(response ? 200 : 500).json(response);
+        } catch(e) {
+            res.status(500).json(e);
+        }
+    }
+
+    async deleteCliente(req: Request, res: Response) {
+        try {
+            const response = await Cliente.deleteCliente(Number(req.params.Id));
 
             res.status(response ? 200 : 500).json(response);
         } catch(e) {
