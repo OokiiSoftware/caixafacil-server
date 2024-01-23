@@ -1,36 +1,36 @@
 import { Router } from "express";
-import { verifyJWT } from "../util/JwToken";
+import { verifyToken } from "../util/JwToken";
 import Controller from "../controller/empresa_controller";
 
 class EmpresaRoute {
     allRoutes(Routes: Router) {
       Routes.get(
         "/empresa",
-        verifyJWT,
+        verifyToken,
         Controller.getListEmpresa
       );
       
       Routes.get(
         '/empresa/:Id',
-        verifyJWT,
+        verifyToken,
         Controller.getEmpresaById
       );
   
       Routes.post(
         '/empresa',
-        verifyJWT,
+        verifyToken,
         Controller.insertEmpresa
       );
 
       Routes.put(
         '/empresa/:Id',
-        verifyJWT,
+        verifyToken,
         Controller.updateEmpresa
       );
   
       Routes.delete(
         '/empresa/:Id',
-        verifyJWT,
+        verifyToken,
         Controller.deleteEmpresa
       );
     }

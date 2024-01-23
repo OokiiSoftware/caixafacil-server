@@ -1,36 +1,36 @@
 import { Router } from "express";
-import { verifyJWT } from "../util/JwToken";
+import { verifyToken } from "../util/JwToken";
 import Controller from "../controller/cliente_controller";
 
 class ClienteRoute {
     allRoutes(Routes: Router) {
       Routes.get(
         "/cliente",
-        verifyJWT,
+        verifyToken,
         Controller.getListCliente
       );
 
       Routes.get(
         '/cliente/:Id',
-        verifyJWT,
+        verifyToken,
         Controller.getClienteById
       );
   
       Routes.post(
         '/cliente',
-        verifyJWT,
+        verifyToken,
         Controller.insertCliente
       );
 
       Routes.put(
         '/cliente/:Id',
-        verifyJWT,
+        verifyToken,
         Controller.updateCliente
       );
   
       Routes.delete(
         '/cliente/:Id',
-        verifyJWT,
+        verifyToken,
         Controller.deleteCliente
       );
     }
