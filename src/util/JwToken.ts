@@ -8,7 +8,7 @@ export const genarateToken = (id: number) => {
       userId: id,
     },
     process.env.SECRET_TOKEN, {
-      expiresIn: "12h",
+      expiresIn: "15m",
     }
   );
 };
