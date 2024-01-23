@@ -6,7 +6,27 @@ class EmpresaRoute {
       Routes.get(
         "/empresa",
         // verifyJWT,
-        Controller.getAll
+        Controller.getListEmpresa
+      );
+      
+      Routes.get(
+        '/empresa/:Id',
+        Controller.getEmpresaById
+      );
+  
+      Routes.post(
+        '/empresa',
+        Controller.insertEmpresa
+      );
+
+      Routes.put(
+        '/empresa/:Id',
+        Controller.updateEmpresa
+      );
+  
+      Routes.delete(
+        '/empresa/:Id',
+        Controller.deleteEmpresa
       );
     }
   }
