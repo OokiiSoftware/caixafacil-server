@@ -3,15 +3,11 @@ import Empresa from '../models/empresa';
 class EmpresaService {
   
   async getListEmpresa() {
-    const values = await Empresa.findAll();
-
-    return values;
+    return await Empresa.findAll();
   }
 
   async getEmpresaById(Id: number) {
-    const values = await Empresa.findByPk(Id);
-
-    return values;
+    return await Empresa.findByPk(Id);
   }
 
   async insertEmpresa(value: Empresa) {
