@@ -39,7 +39,7 @@ NfeDestinatario.init({
    primaryKey: true,
  },
  id_nfe_cabecalho: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "nfe_cabecalho", key: "id" }
  },
  cnpj: {

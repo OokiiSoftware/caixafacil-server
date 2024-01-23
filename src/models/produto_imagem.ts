@@ -20,7 +20,7 @@ ProdutoImagem.init({
    primaryKey: true,
  },
  id_produto: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "produto", key: "id" }
  },
  imagem: {

@@ -21,11 +21,11 @@ PdvFechamento.init({
    primaryKey: true,
  },
  id_pdv_movimento: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "pdv_movimento", key: "id" }
  },
  id_pdv_tipo_pagamento: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "pdv_tipo_pagamento", key: "id" }
  },
  valor: {

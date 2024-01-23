@@ -21,7 +21,7 @@ PdvOperador.init({
    primaryKey: true,
  },
  id_colaborador: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "colaborador", key: "id" }
  },
  login: {

@@ -51,19 +51,19 @@ Produto.init({
    primaryKey: true,
  },
  id_produto_unidade: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "produto_unidade", key: "id" }
  },
  id_tribut_grupo_tributario: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "tribut_grupo_tributario", key: "id" }
  },
  id_produto_tipo: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "produto_tipo", key: "id" }
  },
  id_produto_subgrupo: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "produto_subgrupo", key: "id" }
  },
  gtin: {

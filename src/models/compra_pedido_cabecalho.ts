@@ -40,11 +40,11 @@ CompraPedidoCabecalho.init({
    primaryKey: true,
  },
  id_colaborador: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "colaborador", key: "id" }
  },
  id_fornecedor: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "fornecedor", key: "id" }
  },
  data_pedido: {

@@ -96,7 +96,7 @@ NfeCabecalho.init({
    primaryKey: true,
  },
  id_tribut_operacao_fiscal: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "tribut_operacao_fiscal", key: "id" }
  },
  uf_emitente: {
@@ -328,7 +328,7 @@ NfeCabecalho.init({
    type: DataTypes.STRING,
  },
  id_pdv_venda_cabecalho: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "pdv_venda_cabecalho", key: "id" }
  },
 },

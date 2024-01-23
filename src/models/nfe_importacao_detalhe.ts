@@ -24,7 +24,7 @@ NfeImportacaoDetalhe.init({
    primaryKey: true,
  },
  id_nfe_declaracao_importacao: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "nfe_declaracao_importacao", key: "id" }
  },
  numero_adicao: {

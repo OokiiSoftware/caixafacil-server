@@ -11,7 +11,7 @@ class PdvMovimento extends Model<InferAttributes<PdvMovimento>, InferCreationAtt
  declare id_ecf_impressora: number;
  declare id_pdv_operador: number;
  declare id_pdv_caixa: number;
- declare id_gerente_supervisor: number;
+//  declare id_gerente_supervisor: number; // TODO 
  declare data_abertura: Date;
  declare hora_abertura: string;
  declare data_fechamento: Date;
@@ -37,21 +37,21 @@ PdvMovimento.init({
    primaryKey: true,
  },
  id_ecf_impressora: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "ecf_impressora", key: "id" }
  },
  id_pdv_operador: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "pdv_operador", key: "id" }
  },
  id_pdv_caixa: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "pdv_caixa", key: "id" }
  },
- id_gerente_supervisor: {
-   type: DataTypes.INTEGER,
+ /* id_gerente_supervisor: {
+   type: DataTypes.BIGINT,
    references: { model: "gerente_supervisor", key: "id" }
- },
+ }, */
  data_abertura: {
    type: DataTypes.DATE,
  },

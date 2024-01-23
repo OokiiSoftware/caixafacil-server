@@ -21,7 +21,7 @@ EcfSintegra60a.init({
    primaryKey: true,
  },
  id_ecf_sintegra_60m: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "ecf_sintegra_60m", key: "id" }
  },
  situacao_tributaria: {

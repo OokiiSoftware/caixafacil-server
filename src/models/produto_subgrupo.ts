@@ -21,7 +21,7 @@ ProdutoSubgrupo.init({
    primaryKey: true,
  },
  id_produto_grupo: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "produto_grupo", key: "id" }
  },
  nome: {

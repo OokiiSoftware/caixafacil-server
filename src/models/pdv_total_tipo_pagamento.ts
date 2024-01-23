@@ -32,11 +32,11 @@ PdvTotalTipoPagamento.init({
    primaryKey: true,
  },
  id_pdv_venda_cabecalho: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "pdv_venda_cabecalho", key: "id" }
  },
  id_pdv_tipo_pagamento: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "pdv_tipo_pagamento", key: "id" }
  },
  data_venda: {

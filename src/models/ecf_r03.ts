@@ -24,7 +24,7 @@ EcfR03.init({
    primaryKey: true,
  },
  id_ecf_r02: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "ecf_r02", key: "id" }
  },
  serie_ecf: {

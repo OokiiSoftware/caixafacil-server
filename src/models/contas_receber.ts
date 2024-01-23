@@ -34,11 +34,11 @@ ContasReceber.init({
    primaryKey: true,
  },
  id_cliente: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "cliente", key: "id" }
  },
  id_pdv_venda_cabecalho: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "pdv_venda_cabecalho", key: "id" }
  },
  data_lancamento: {

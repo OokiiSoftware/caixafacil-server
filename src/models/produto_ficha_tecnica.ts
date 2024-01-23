@@ -10,7 +10,7 @@ class ProdutoFichaTecnica extends Model<InferAttributes<ProdutoFichaTecnica>, In
  declare id: number;
  declare id_produto: number;
  declare descricao: string;
- declare id_produto_filho: number;
+//  declare id_produto_filho: number;
  declare quantidade: number;
  declare valor_custo: number;
  declare percentual_custo: number;
@@ -24,16 +24,16 @@ ProdutoFichaTecnica.init({
    primaryKey: true,
  },
  id_produto: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "produto", key: "id" }
  },
  descricao: {
    type: DataTypes.STRING,
  },
- id_produto_filho: {
-   type: DataTypes.INTEGER,
+ /* id_produto_filho: {
+   type: DataTypes.BIGINT,
    references: { model: "produto_filho", key: "id" }
- },
+ }, */
  quantidade: {
    type: DataTypes.REAL,
  },

@@ -22,7 +22,7 @@ NfeDuplicata.init({
    primaryKey: true,
  },
  id_nfe_fatura: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "nfe_fatura", key: "id" }
  },
  numero: {

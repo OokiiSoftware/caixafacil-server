@@ -23,11 +23,11 @@ FidelidadeHistorico.init({
    primaryKey: true,
  },
  id_cliente: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "cliente", key: "id" }
  },
  id_fidelidade_utilizado: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "fidelidade_utilizado", key: "id" }
  },
  data_consumo: {

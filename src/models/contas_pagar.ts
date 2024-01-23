@@ -34,11 +34,11 @@ ContasPagar.init({
    primaryKey: true,
  },
  id_fornecedor: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "fornecedor", key: "id" }
  },
  id_compra_pedido_cabecalho: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "compra_pedido_cabecalho", key: "id" }
  },
  data_lancamento: {

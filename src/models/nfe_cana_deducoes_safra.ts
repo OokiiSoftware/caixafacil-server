@@ -24,7 +24,7 @@ NfeCanaDeducoesSafra.init({
    primaryKey: true,
  },
  id_nfe_cana: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "nfe_cana", key: "id" }
  },
  decricao: {

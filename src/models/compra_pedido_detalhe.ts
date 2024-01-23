@@ -29,11 +29,11 @@ CompraPedidoDetalhe.init({
    primaryKey: true,
  },
  id_compra_pedido_cabecalho: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "compra_pedido_cabecalho", key: "id" }
  },
  id_produto: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "produto", key: "id" }
  },
  quantidade: {

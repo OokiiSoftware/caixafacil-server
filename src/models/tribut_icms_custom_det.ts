@@ -36,7 +36,7 @@ TributIcmsCustomDet.init({
    primaryKey: true,
  },
  id_tribut_icms_custom_cab: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "tribut_icms_custom_cab", key: "id" }
  },
  uf_destino: {

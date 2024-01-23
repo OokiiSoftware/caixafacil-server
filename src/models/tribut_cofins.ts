@@ -27,7 +27,7 @@ TributCofins.init({
    primaryKey: true,
  },
  id_tribut_configura_of_gt: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "tribut_configura_of_gt", key: "id" }
  },
  cst_cofins: {

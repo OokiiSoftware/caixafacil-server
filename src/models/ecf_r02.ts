@@ -10,7 +10,7 @@ class EcfR02 extends Model<InferAttributes<EcfR02>, InferCreationAttributes<EcfR
  declare id: number;
  declare id_pdv_operador: number;
  declare id_ecf_impressora: number;
- declare id_ecf_caixa: number;
+//  declare id_ecf_caixa: number; // TODO
  declare serie_ecf: string;
  declare crz: number;
  declare coo: number;
@@ -31,17 +31,17 @@ EcfR02.init({
    primaryKey: true,
  },
  id_pdv_operador: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "pdv_operador", key: "id" }
  },
  id_ecf_impressora: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "ecf_impressora", key: "id" }
  },
- id_ecf_caixa: {
-   type: DataTypes.INTEGER,
+ /* id_ecf_caixa: {
+   type: DataTypes.BIGINT,
    references: { model: "ecf_caixa", key: "id" }
- },
+ }, */
  serie_ecf: {
    type: DataTypes.STRING,
  },

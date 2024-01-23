@@ -11,8 +11,8 @@ class PdvVendaCabecalho extends Model<InferAttributes<PdvVendaCabecalho>, InferC
  declare id_cliente: number;
  declare id_colaborador: number;
  declare id_pdv_movimento: number;
- declare id_ecf_dav: number;
- declare id_ecf_pre_venda_cabecalho: number;
+//  declare id_ecf_dav: number; // TODO
+//  declare id_ecf_pre_venda_cabecalho: number;
  declare serie_ecf: string;
  declare cfop: number;
  declare coo: number;
@@ -54,25 +54,25 @@ PdvVendaCabecalho.init({
    primaryKey: true,
  },
  id_cliente: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "cliente", key: "id" }
  },
  id_colaborador: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "colaborador", key: "id" }
  },
  id_pdv_movimento: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "pdv_movimento", key: "id" }
  },
- id_ecf_dav: {
-   type: DataTypes.INTEGER,
+ /* id_ecf_dav: {
+   type: DataTypes.BIGINT,
    references: { model: "ecf_dav", key: "id" }
- },
- id_ecf_pre_venda_cabecalho: {
-   type: DataTypes.INTEGER,
+ }, */
+ /* id_ecf_pre_venda_cabecalho: {
+   type: DataTypes.BIGINT,
    references: { model: "ecf_pre_venda_cabecalho", key: "id" }
- },
+ }, */
  serie_ecf: {
    type: DataTypes.STRING,
  },

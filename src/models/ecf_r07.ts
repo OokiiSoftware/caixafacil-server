@@ -25,7 +25,7 @@ EcfR07.init({
    primaryKey: true,
  },
  id_ecf_r06: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "ecf_r06", key: "id" }
  },
  ccf: {

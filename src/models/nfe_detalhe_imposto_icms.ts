@@ -61,7 +61,7 @@ NfeDetalheImpostoIcms.init({
    primaryKey: true,
  },
  id_nfe_detalhe: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "nfe_detalhe", key: "id" }
  },
  origem_mercadoria: {

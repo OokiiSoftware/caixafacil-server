@@ -20,11 +20,11 @@ TributConfiguraOfGt.init({
    primaryKey: true,
  },
  id_tribut_grupo_tributario: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "tribut_grupo_tributario", key: "id" }
  },
  id_tribut_operacao_fiscal: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "tribut_operacao_fiscal", key: "id" }
  },
 },

@@ -23,7 +23,7 @@ EcfDocumentosEmitidos.init({
    primaryKey: true,
  },
  id_pdv_movimento: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "pdv_movimento", key: "id" }
  },
  data_emissao: {

@@ -10,7 +10,7 @@ class PdvConfiguracao extends Model<InferAttributes<PdvConfiguracao>, InferCreat
  declare id: number;
  declare id_ecf_impressora: number;
  declare id_pdv_caixa: number;
- declare id_tribut_operacao_fiscal_padrao: number;
+//  declare id_tribut_operacao_fiscal_padrao: number; // TODO
  declare mensagem_cupom: string;
  declare porta_ecf: string;
  declare ip_servidor: string;
@@ -66,17 +66,17 @@ PdvConfiguracao.init({
    primaryKey: true,
  },
  id_ecf_impressora: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "ecf_impressora", key: "id" }
  },
  id_pdv_caixa: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "pdv_caixa", key: "id" }
  },
- id_tribut_operacao_fiscal_padrao: {
-   type: DataTypes.INTEGER,
+ /* id_tribut_operacao_fiscal_padrao: {
+   type: DataTypes.BIGINT,
    references: { model: "tribut_operacao_fiscal_padrao", key: "id" }
- },
+ }, */
  mensagem_cupom: {
    type: DataTypes.STRING,
  },

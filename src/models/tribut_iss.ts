@@ -27,7 +27,7 @@ TributIss.init({
    primaryKey: true,
  },
  id_tribut_operacao_fiscal: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "tribut_operacao_fiscal", key: "id" }
  },
  modalidade_base_calculo: {

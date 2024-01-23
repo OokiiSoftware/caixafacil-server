@@ -32,7 +32,7 @@ PdvConfiguracaoLeitorSerial.init({
    primaryKey: true,
  },
  id_pdv_configuracao: {
-   type: DataTypes.INTEGER,
+   type: DataTypes.BIGINT,
    references: { model: "pdv_configuracao", key: "id" }
  },
  usa: {
