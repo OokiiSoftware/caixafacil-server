@@ -1,4 +1,4 @@
-import { Sequelize } from "sequelize";
+import { Sequelize, QueryInterface } from "sequelize";
 
 const env = process.env;
 
@@ -13,3 +13,5 @@ export const sequelize = new Sequelize(env.DB_NAME as string, env.DB_USER as str
         charset: 'utf8',
     }
 });
+
+export const queryInterface = new QueryInterface(sequelize);
