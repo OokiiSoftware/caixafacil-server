@@ -16,8 +16,15 @@ app.listen(port, () => {
 createDatabase.then(() => {
     sequelize.authenticate().then(() => {
         console.log('Conectdo ao banco de dados');
-        sequelize.sync();
+        sequelize.sync().then(() => {
+            console.log('\nBanco de dados Gerado com sucesso!');
+        });
     }).catch((e) => {
         console.log('Erro ao conectar ao banco de dados', e);
     });
 });
+
+// Gerar token
+// const crypto = require('crypto');
+// const token = crypto.randomBytes(64).toString('hex');
+// console.log(token);

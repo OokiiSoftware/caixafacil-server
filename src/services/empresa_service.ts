@@ -3,7 +3,10 @@ import Empresa from '../models/empresa';
 class EmpresaService {
   
   async getListEmpresa() {
-    return await Empresa.findAll();
+    return await Empresa.findAll({
+      limit: 40,
+      include: [{ all: true, nested: true }],
+    });
   }
 
   async getEmpresaById(Id: number) {

@@ -1,7 +1,8 @@
 import { Request, Response } from "express";
-import Empresa from "../services/empresa_serice";
+import Empresa from "../services/empresa_service";
 
 class EmpresaController {
+    
     async getListEmpresa(req: Request, res: Response) {
         try {
             const response = await Empresa.getListEmpresa();
@@ -31,7 +32,7 @@ class EmpresaController {
             res.status(500).json(e);
         }
     }
-    
+
     async updateEmpresa(req: Request, res: Response) {
         try {
             const response = await Empresa.updateEmpresa(Number(req.params.Id), req.body);
