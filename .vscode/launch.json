@@ -5,20 +5,16 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "chrome",
-            "request": "launch",
-            "name": "Iniciar o Chrome em relação a localhost",
-            "url": "http://localhost:8080",
-            "webRoot": "${workspaceFolder}",
-        },
-        {
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\server.ts"
+            "program": "${workspaceFolder}\\src\\main.ts",
+            "outFiles": [
+                "${workspaceFolder}/**/*.js"
+            ]
         }
     ]
 }
